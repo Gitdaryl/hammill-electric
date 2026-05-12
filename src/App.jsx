@@ -47,7 +47,7 @@ const whyItems = [
   { icon: 'clipboard', label: 'Free Estimates',             sub: 'No commitment required' },
   { icon: 'home',      label: 'Residential, Commercial & Ag', sub: 'All property types' },
   { icon: 'bolt',      label: '30+ Years Experience',       sub: 'Thousands of jobs completed' },
-  { icon: 'map',       label: 'Fire Captain, Addison FD',   sub: 'Knows what bad wiring costs' },
+  { icon: 'map',       label: 'Asst. Chief, Addison FD',    sub: 'Knows what bad wiring costs' },
   { icon: 'check',     label: 'Up to Code, Every Time',     sub: 'Inspections passed, work guaranteed' },
 ];
 
@@ -440,7 +440,7 @@ export default function App() {
               company with a call center. When you call, you get me. When I show up, I do the work.
             </p>
             <p style={{ color: 'var(--text-muted)', fontSize: 17, lineHeight: 1.8, marginBottom: 20 }}>
-              I'm also a Captain with the Addison Fire Department. I've seen firsthand what
+              I'm also Assistant Chief with the Addison Fire Department. I've seen firsthand what
               happens when electrical work is done wrong. That's not something I take lightly
               on any job, big or small.
             </p>
@@ -451,7 +451,7 @@ export default function App() {
               {[
                 '30+ years in residential, commercial & agricultural electrical',
                 'Michigan Licensed Electrical Contractor',
-                'Captain, Addison Fire Department',
+                'Assistant Chief, Addison Fire Department',
                 'Fully insured on every job, every time',
                 'Serving Addison and surrounding communities',
               ].map(item => (
