@@ -86,7 +86,7 @@ function QuoteWidget() {
           {submitted ? (
             <div style={{ textAlign: 'center', padding: '20px 0' }}>
               <div style={{ fontSize: 36, marginBottom: 12 }}>
-                <Icon name="check" size={40} color="var(--gold)" />
+                <Icon name="check" size={40} color="var(--crimson)" />
               </div>
               <div style={{ fontWeight: 700, color: 'var(--navy)', fontSize: 16, marginBottom: 6 }}>Got it, thanks!</div>
               <div style={{ color: 'var(--text-muted)', fontSize: 14 }}>Steve will call you shortly.</div>
@@ -167,7 +167,7 @@ export default function App() {
         style={{
           position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
           background: 'var(--navy-dark)',
-          borderBottom: '3px solid var(--gold)',
+          borderBottom: '3px solid var(--crimson)',
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
           padding: '0 40px', height: 68,
         }}
@@ -220,10 +220,10 @@ export default function App() {
           position: 'absolute', inset: 0, zIndex: 1,
           background: 'linear-gradient(110deg, rgba(15,26,61,0.95) 0%, rgba(26,42,94,0.80) 55%, rgba(0,0,0,0.55) 100%)',
         }} />
-        {/* Gold accent stripe */}
+        {/* Crimson accent stripe */}
         <div style={{
           position: 'absolute', top: 0, left: 0, width: 6, bottom: 0,
-          background: 'var(--gold)', zIndex: 2,
+          background: 'var(--crimson)', zIndex: 2,
         }} />
 
         {/* Hero content */}
@@ -293,9 +293,9 @@ export default function App() {
               <div key={t} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                 <div style={{
                   width: 28, height: 28, borderRadius: '50%',
-                  background: 'var(--gold)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+                  background: 'var(--crimson)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
                 }}>
-                  <Icon name="check" size={14} color="var(--navy-dark)" />
+                  <Icon name="check" size={14} color="var(--white)" />
                 </div>
                 <span style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 600, fontSize: 14 }}>{t}</span>
               </div>
@@ -332,17 +332,17 @@ export default function App() {
                   textAlign: 'left',
                   transition: 'background 200ms',
                 }}
-                onMouseEnter={e => e.currentTarget.style.background = 'rgba(245,166,35,0.08)'}
+                onMouseEnter={e => e.currentTarget.style.background = 'rgba(196,32,32,0.1)'}
                 onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
               >
                 <div style={{
                   width: 52, height: 52, borderRadius: 'var(--radius-sm)',
-                  background: 'rgba(245,166,35,0.15)',
-                  border: '1px solid rgba(245,166,35,0.3)',
+                  background: 'rgba(196,32,32,0.12)',
+                  border: '1px solid rgba(196,32,32,0.3)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   marginBottom: 20,
                 }}>
-                  <Icon name={item.icon} size={24} color="var(--gold)" />
+                  <Icon name={item.icon} size={24} color="var(--crimson)" />
                 </div>
                 <div style={{ fontFamily: 'var(--font-head)', color: 'var(--white)', fontSize: 18, fontWeight: 600, marginBottom: 6 }}>
                   {item.label}
@@ -396,8 +396,8 @@ export default function App() {
                     loading="lazy"
                     style={{ width: '100%', height: 200, objectFit: 'cover', display: 'block' }}
                   />
-                  {/* Gold top bar */}
-                  <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'var(--gold)' }} />
+                  {/* Crimson top bar */}
+                  <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'var(--crimson)' }} />
                   {/* Icon badge */}
                   <div style={{
                     position: 'absolute', bottom: -20, left: 24,
@@ -406,7 +406,7 @@ export default function App() {
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     boxShadow: '0 4px 12px rgba(0,0,0,0.25)',
                   }}>
-                    <Icon name={svc.icon} size={22} color="var(--gold)" />
+                    <Icon name={svc.icon} size={22} color="var(--crimson)" />
                   </div>
                 </div>
                 <div style={{ padding: '32px 24px 28px' }}>
@@ -458,10 +458,10 @@ export default function App() {
                 <li key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>
                   <div style={{
                     width: 26, height: 26, borderRadius: '50%', flexShrink: 0, marginTop: 1,
-                    background: 'var(--gold-pale)', border: '2px solid var(--gold)',
+                    background: 'var(--crimson-pale)', border: '2px solid var(--crimson)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                   }}>
-                    <Icon name="check" size={13} color="var(--navy)" />
+                    <Icon name="check" size={13} color="var(--crimson)" />
                   </div>
                   <span style={{ color: 'var(--text)', fontWeight: 500, fontSize: 15 }}>{item}</span>
                 </li>
@@ -482,7 +482,7 @@ export default function App() {
           <div ref={aboutRightRef} className={`about-img-col reveal-right${aboutRightVisible ? ' visible' : ''}`} style={{ position: 'relative' }}>
             <div style={{
               position: 'absolute', top: -20, left: -20, right: 20, bottom: -20,
-              border: '3px solid var(--gold)', borderRadius: 'var(--radius-lg)',
+              border: '3px solid var(--crimson)', borderRadius: 'var(--radius-lg)',
               zIndex: 0,
             }} />
             <img
@@ -522,7 +522,7 @@ export default function App() {
                 style={{
                   background: 'var(--white)',
                   border: '1px solid var(--border)',
-                  borderTop: '4px solid var(--gold)',
+                  borderTop: '4px solid var(--crimson)',
                   borderRadius: 'var(--radius-lg)',
                   padding: '32px 28px',
                   textAlign: 'left',
@@ -550,7 +550,7 @@ export default function App() {
       <section
         style={{
           background: 'var(--navy)',
-          borderTop: '4px solid var(--gold)', borderBottom: '4px solid var(--gold)',
+          borderTop: '4px solid var(--crimson)', borderBottom: '4px solid var(--crimson)',
           padding: '60px 40px',
           textAlign: 'center',
         }}
@@ -621,7 +621,7 @@ export default function App() {
             <div style={{
               marginTop: 40, padding: '20px 24px',
               background: 'var(--gold-pale)', borderRadius: 'var(--radius-md)',
-              border: '1px solid var(--gold)', display: 'flex', gap: 12, alignItems: 'flex-start',
+              border: '1px solid var(--crimson)', display: 'flex', gap: 12, alignItems: 'flex-start',
             }}>
               <Icon name="bolt" size={22} color="var(--navy)" style={{ flexShrink: 0 }} />
               <div>
@@ -643,7 +643,7 @@ export default function App() {
               <div style={{ textAlign: 'center', padding: '40px 0' }}>
                 <div style={{
                   width: 72, height: 72, borderRadius: '50%', background: 'var(--gold-pale)',
-                  border: '3px solid var(--gold)', margin: '0 auto 20px',
+                  border: '3px solid var(--crimson)', margin: '0 auto 20px',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                 }}>
                   <Icon name="check" size={32} color="var(--navy)" />
@@ -664,11 +664,11 @@ export default function App() {
               >
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 20 }}>
                   <div className="field-wrap">
-                    <label className="field-label" htmlFor="cf-name">Your Name <span aria-hidden="true" style={{ color: 'var(--gold)' }}>*</span></label>
+                    <label className="field-label" htmlFor="cf-name">Your Name <span aria-hidden="true" style={{ color: 'var(--crimson)' }}>*</span></label>
                     <input id="cf-name" className="field-input" type="text" placeholder="John Smith" required autoComplete="name" />
                   </div>
                   <div className="field-wrap">
-                    <label className="field-label" htmlFor="cf-phone">Phone Number <span aria-hidden="true" style={{ color: 'var(--gold)' }}>*</span></label>
+                    <label className="field-label" htmlFor="cf-phone">Phone Number <span aria-hidden="true" style={{ color: 'var(--crimson)' }}>*</span></label>
                     <input id="cf-phone" className="field-input" type="tel" placeholder="517-000-0000" required autoComplete="tel" />
                   </div>
                 </div>
@@ -679,7 +679,7 @@ export default function App() {
                 </div>
 
                 <div className="field-wrap" style={{ marginBottom: 20 }}>
-                  <label className="field-label" htmlFor="cf-service">Type of Work <span aria-hidden="true" style={{ color: 'var(--gold)' }}>*</span></label>
+                  <label className="field-label" htmlFor="cf-service">Type of Work <span aria-hidden="true" style={{ color: 'var(--crimson)' }}>*</span></label>
                   <select id="cf-service" className="field-input" required>
                     <option value="">Select a service...</option>
                     <option>Residential Wiring</option>
@@ -711,7 +711,7 @@ export default function App() {
       </section>
 
       {/* ── FOOTER ─────────────────────────────────────────────────────── */}
-      <footer style={{ background: 'var(--navy-dark)', borderTop: '4px solid var(--gold)', padding: '52px 40px 28px' }}>
+      <footer style={{ background: 'var(--navy-dark)', borderTop: '4px solid var(--crimson)', padding: '52px 40px 28px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <div className="footer-cols" style={{ display: 'flex', justifyContent: 'space-between', gap: 48, marginBottom: 48, flexWrap: 'wrap' }}>
             {/* Brand */}

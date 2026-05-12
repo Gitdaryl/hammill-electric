@@ -7,9 +7,12 @@
 }
 
 :root {
-  --navy:        #1a2a5e;
-  --navy-mid:    #1e3070;
-  --navy-dark:   #0f1a3d;
+  --navy:        #1a2060;
+  --navy-mid:    #1e2878;
+  --navy-dark:   #0f1340;
+  --crimson:     #c42020;
+  --crimson-dark:#9b1818;
+  --crimson-pale:#fdf0f0;
   --gold:        #f5a623;
   --gold-light:  #fbb827;
   --gold-pale:   #fef3dc;
@@ -52,7 +55,7 @@ body {
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--crimson);
   margin-bottom: 12px;
 }
 
@@ -89,11 +92,11 @@ body {
 }
 
 .btn-primary {
-  background: var(--gold);
-  color: var(--navy-dark);
-  border-color: var(--gold);
+  background: var(--crimson);
+  color: var(--white);
+  border-color: var(--crimson);
 }
-.btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(245,166,35,0.4); }
+.btn-primary:hover { background: var(--crimson-dark); border-color: var(--crimson-dark); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(196,32,32,0.4); }
 
 .btn-outline-white {
   background: transparent;
@@ -182,7 +185,7 @@ textarea.field-input { min-height: 100px; resize: vertical; }
   bottom: 0; left: 0; right: 0;
   z-index: 200;
   background: var(--navy-dark);
-  border-top: 3px solid var(--gold);
+  border-top: 3px solid var(--crimson);
   padding: 12px 20px;
   gap: 10px;
   align-items: center;
